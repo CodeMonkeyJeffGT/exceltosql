@@ -1,0 +1,78 @@
+{
+    "maxInsert": {
+        "num": 2000,
+        "_comment": "单条sql批量插入上限，0为无上限"
+    },
+    "database": {
+        "tableName": "test",
+        "fields": [
+            {
+                "name": "id",
+                "type": "int",
+                "excel": null,
+                "default": null
+            },
+            {
+                "name": "car_id",
+                "type": "int",
+                "excel": "carid",
+                "default": -1
+            },
+            {
+                "name": "operate_user_id",
+                "type": "int",
+                "excel": "操作人员",
+                "default": -1
+            },
+            {
+                "name": "pledge_party_id",
+                "type": "int",
+                "excel": "质押方id",
+                "default": 0
+            },
+            {
+                "name": "pledge_party_name",
+                "type": "string",
+                "excel": "质押方名称",
+                "default": ""
+            },
+            {
+                "name": "created_at",
+                "type": "string",
+                "excel": null,
+                "default": null
+            },
+            {
+                "name": "updated_at",
+                "type": "string",
+                "excel": null,
+                "default": null
+            },
+            {
+                "name": "pledge_status",
+                "type": "int",
+                "excel": null,
+                "default": 0
+            },
+            {
+                "name": "contract_id",
+                "type": "int",
+                "excel": "合同号",
+                "default": 0
+            },
+            {
+                "name": "del_flag",
+                "type": "int",
+                "excel": null,
+                "default": 0
+            }
+        ],
+        "_comment": "type：分为 int 和 string，主要用于sql生成"
+    },
+    "excel": {
+        "headLine": 1,
+        "startLine": 2,
+        "_comment": "headLine：参考表头，0为excel自带的 A、B，其他为具体行数；startLine：具体数据开始行数"
+    },
+    "_comment": "车辆质押表样例"
+}
